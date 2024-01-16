@@ -1,0 +1,3 @@
+Estructura de proetco
+
+la buena practica indica q se estandarizan todos los compenentes. Llamese componentes a elementos del tipo: titles, buttons, containers, inputs, tables, 

@@ -1,0 +1,56 @@
+.objects{
+    margin-top: 30px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.objects__title{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    color: antiquewhite;
+}
+
+/* .ver_todo{
+    position: relative;
+    right: 90%;
+    padding: 20px;
+    font-size: 20px;
+    color: antiquewhite;
+    width: 100px;
+} */
+
+.objects__container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.objects__box{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.objects__img{
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.objects__names{
+    font-size: 30px;
+    color: antiquewhite;
+    margin-bottom: 10px;
+}
+
+.objects__price{
+    font-size: 20px;
+    color: antiquewhite;
+    margin-bottom: 10px;
+}
+
+.objects__box a{
+    font-size: 20px;
+    color: #00B4CC;
+    margin-bottom: 10px;
+}

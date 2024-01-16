@@ -1,0 +1,43 @@
+.header__banner {
+    position: relative;
+    /* background-image: url('../../IMG/banner/cinema.png'); */
+}
+
+.banner {
+    width: 100%;
+    box-shadow: 0px 15px 14px -7px #000000;
+}
+
+.banner__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    left: 5%;
+    top: 60%;
+    color: antiquewhite;
+    font-size: 35px;
+}
+
+.banner__title {
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.banner__description {
+    padding-bottom: 10px;
+}
+
+.banner__btn {
+    background: #00B4CC;
+    background-color: #00B4CC;
+    border-radius: 8px;
+    border-color: #00B4CC;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+}
