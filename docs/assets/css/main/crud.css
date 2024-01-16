@@ -1,0 +1,41 @@
+.registro_title{
+    font-size: 45px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 20px 0 50px 0;
+}
+.registro_producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+.registro_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+.registro_form div input{
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+}
+.registro_categoria{
+    padding: 10px;
+    border-radius: 10px;
+}
+.registro_button{
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:#00B4CC;
+	background-color:#00B4CC;
+	border-radius:8px ;
+    border-color: #00B4CC;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+}
