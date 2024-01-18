@@ -3,7 +3,7 @@
 //GET
 
 const productList = ()=>{
-   return fetch ("http://localhost:3000/product")
+   return fetch ("https://federicohiga.github.io/Challenge-3-e-commerce_2.0/db.json")
     .then ((response)=> response.json());
 }
 
@@ -11,7 +11,7 @@ const productList = ()=>{
 //POST
 
 const productPost = (name, imgURL, price, categoria)=>{
-    return fetch ("http://localhost:3000/product", {
+    return fetch ("https://federicohiga.github.io/Challenge-3-e-commerce_2.0/db.json", {
         method: "POST",
         headers: {
             "Content-type": "application/json"

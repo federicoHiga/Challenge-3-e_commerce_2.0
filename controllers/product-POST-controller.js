@@ -19,7 +19,7 @@ form.addEventListener("submit", (event)=>{
 
     productService.productPost(name, imgURL, price, categoria)
     .then (() =>{
-        window.location.href= "/Challenge-3-e_commerce_2.0/index.html"
+        window.location.href= "../index.html"
         alert("Producto agregado con exito");
     }).catch (error=>{
         console.log(error);
