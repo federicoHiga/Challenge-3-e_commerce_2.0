@@ -3,7 +3,7 @@
 //GET
 
 const productList = ()=>{
-   return fetch ("/db.json")
+   return fetch ("db.json")
     .then ((response)=> response.json());
 }
 
@@ -11,7 +11,7 @@ const productList = ()=>{
 //POST
 
 const productPost = (name, imgURL, price, categoria)=>{
-    return fetch ("/db.json", {
+    return fetch ("db.json", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
