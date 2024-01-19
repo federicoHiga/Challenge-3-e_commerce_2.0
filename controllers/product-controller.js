@@ -51,28 +51,31 @@ const mostrarProducto = async ()=>{
 
     try{
         const allProducts = await productService.productList();
+        console.log('',allProducts)
+        const allProductsToArray = Object.entries(allProducts);
+        console.log(allProductsToArray)
 
         if(verMas){// aca postea si o si
             // verMas.innerHTML = ''; / reinicia el conteiner mostrando solo los prodcutos agregados de manera dinamica por el CRUD, los estaticos del index.html los peina
-            allProducts.forEach(elemento =>{
+           allProductsToArray.forEach(elemento =>{
                 verMas.appendChild(newProduct(elemento.name, elemento.imgURL, elemento.price, elemento.id));
             });
         }
         if(movie){//aca postea solos si pasa el filtro
             // movie.innerHTML = "";
-            allProducts.filter(producto => producto.categoria === "Movie").forEach(elemento => {
+            allProductsToArray.filter(producto => producto.categoria === "Movie").forEach(elemento => {
                 movie.appendChild(newProduct(elemento.name, elemento.imgURL, elemento.price, elemento.id))
             });
         }
         if(serie){//aca postea solos si pasa el filtro
             // serie.innerHTML = "";
-            allProducts.filter(producto => producto.categoria === "Serie").forEach(elemento => {
+            allProductsToArray.filter(producto => producto.categoria === "Serie").forEach(elemento => {
                 serie.appendChild(newProduct(elemento.name, elemento.imgURL, elemento.price, elemento.id))
             });
         }
         if(producto){//aca postea solos si pasa el filtro
             // producto.innerHTML = "";
-            allProducts.filter(producto => producto.categoria === "Producto").forEach(elemento => {
+            allProductsToArray.filter(producto => producto.categoria === "Producto").forEach(elemento => {
                 producto.appendChild(newProduct(elemento.name, elemento.imgURL, elemento.price, elemento.id))
             });
         }
@@ -80,7 +83,7 @@ const mostrarProducto = async ()=>{
             const url = new URL(window.location);//aca crea una nueva url
             const idProducto = url.searchParams.get("id");//y aca la asocia con el id para el ?=id
             verProducto.innerHTML = '';
-            allProducts.filter(producto => producto.id === idProducto).forEach(elemento => {
+            allProductsToArray.filter(producto => producto.id === idProducto).forEach(elemento => {
                 verProducto.appendChild(productView.verProducto(elemento.name, elemento.imgURL, elemento.price, elemento.id, elemento.categoria,));
             });
         }
